@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name" translatable="false">Uniq App</string>
+    <string name="debug">Debug</string>
+    <string name="null">NULL</string>
+
+    <!-- Start -->
+    <string name="welcome">Hey! Welcome to</string>
+    <string name="lets_start">Let's Start</string>
+    <string name="settings">Settings</string>
+
+    <!-- Dialog -->
+    <string name="alert_dialog_tap_anywhere">Tap anywhere to dismiss this pop up.</string>
+
+    <!-- Settings -->
+    <string name="settings_unavailable">Nothing to modify as of yet.</string>
+
+    <!-- About App -->
+    <string name="about_title">About</string>
+
+    <string name="about_app">About Uniq App</string>
+    <string name="about_text">.</string>
+
+    <string name="about_resources">About Resources</string>
+    <string name="about_resources_text">We have using the Smoooth Icon Pack by Software Mansion S.A. for the iconography of our application.</string>
+
+    <string name="about_disclaimer">About Disclaimer</string>
+    <string name="about_disclaimer_text">Refrain from swiping away the application in the app switcher, as this action will result in the complete destruction of the application and the subsequent resetting of all data.\n\nThis application is solely intended for personal use within the confines of the store where I am employed. It does not establish any connections to external servers nor does it possess the capability to initiate communication with external servers.\n\nAll crew information stored within the mobile application is retained temporarily until the application is destroyed.\n\nIt is important to note that this application is a personal project and is not intended for commercial use.</string>
+
+    <!-- About Creator -->
+    <string name="about_creator_title">About Creator</string>
+    <string name="about_creator_name" translatable="false">Aaron Hamilton</string>
+    <string name="about_creator_description">Android Developer @ Uniq Studio</string>
+    <string name="about_creator_number" translatable="false">+7444 555 666</string>
+    <string name="about_creator_email" translatable="false">aaron.hamil5@gmail.com</string>
+    <string name="about_creator_social" translatable="false">@aaron.hamil5</string>
+
+</resources>
