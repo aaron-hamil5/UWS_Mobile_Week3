@@ -1,0 +1,53 @@
+package org.uniqstudio.week3uws.ui.screens.tasks
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import org.uniqstudio.week3uws.ui.screens.premade.TextForUI
+import org.uniqstudio.week3uws.ui.screens.premade.TopBar
+import org.uniqstudio.week3uws.ui.screens.premade.UserInputShellCompact
+import uws_mobile_week3.composeapp.generated.resources.Res
+import uws_mobile_week3.composeapp.generated.resources.uniq_studio_logo
+
+@Composable
+fun TaskNine(
+    modifier: Modifier = Modifier,
+    onClickBack: () -> Unit,
+    onClickNext: () -> Unit,
+){
+    val a = 5
+    val b = 10
+
+    val add = a + b
+    val sub = a - b
+    val times = a * b
+    val div = a / b
+
+    Scaffold(
+        modifier = modifier,
+        topBar = { TopBar(
+            image = Res.drawable.uniq_studio_logo,
+            text = "Task Nine",
+            onClickBack = onClickBack
+        ) }
+    ) {innerPadding ->
+        Box(modifier = Modifier.padding(innerPadding)) {
+            UserInputShellCompact(
+                image = Res.drawable.uniq_studio_logo,
+                title = "Operators in Kotlin",
+                description = "Practice using operators in Kotlin.",
+                infoText = "Task Nine",
+                composableContent = {
+                    TextForUI(text = add.toString())
+                    TextForUI(text = sub.toString())
+                    TextForUI(text = times.toString())
+                    TextForUI(text = div.toString())
+                },
+                onClickBack = onClickBack,
+                onClickNext = onClickNext
+            )
+        }
+    }
+}

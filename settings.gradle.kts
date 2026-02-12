@@ -1,4 +1,4 @@
-rootProject.name = "UniqAppTemplate"
+rootProject.name = "UWS_Mobile_Week3"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {

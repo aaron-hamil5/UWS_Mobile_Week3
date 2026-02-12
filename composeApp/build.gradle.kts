@@ -48,11 +48,11 @@ kotlin {
 }
 
 android {
-    namespace = "org.uniqstudio.uat"
+    namespace = "org.uniqstudio.week3uws"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "org.uniqstudio.uat"
+        applicationId = "org.uniqstudio.week3uws"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
