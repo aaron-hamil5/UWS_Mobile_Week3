@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import org.uniqstudio.week3uws.ui.screens.premade.TextForUI
 import org.uniqstudio.week3uws.ui.screens.premade.TopBar
 import org.uniqstudio.week3uws.ui.screens.premade.UserInputShellCompact
 import uws_mobile_week3.composeapp.generated.resources.Res
@@ -16,8 +17,6 @@ fun TaskNine(
     onClickBack: () -> Unit,
     onClickNext: () -> Unit,
 ){
-
-
     Scaffold(
         modifier = modifier,
         topBar = { TopBar(
@@ -29,10 +28,11 @@ fun TaskNine(
         Box(modifier = Modifier.padding(innerPadding)) {
             UserInputShellCompact(
                 image = Res.drawable.uniq_studio_logo,
-                title = "Operators in Kotlin",
-                description = "Practice using operators in Kotlin.",
+                title = "Simple Function and Function Calling in Kotlin",
+                description = "Understand how to define a simple function and call it from the main function.",
                 infoText = "Task Nine",
                 composableContent = {
+                    TextForUI(text = "Hello, World")
                 },
                 onClickBack = onClickBack,
                 onClickNext = onClickNext
