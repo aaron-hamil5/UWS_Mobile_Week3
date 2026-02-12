@@ -17,6 +17,7 @@ fun TaskTwo(
     onClickBack: () -> Unit,
     onClickNext: () -> Unit,
 ){
+    val num = 10
     Scaffold(
         modifier = modifier,
         topBar = { TopBar(
@@ -33,7 +34,7 @@ fun TaskTwo(
                 infoText = "Task Two",
                 composableContent = {
                     TextForUI(
-                        text = ""
+                        text = if (num % 2 == 0) "Number is even - $num" else "Number is odd - $num"
                     )
                 },
                 onClickBack = onClickBack,

@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import org.uniqstudio.week3uws.ui.screens.premade.TextForUI
 import org.uniqstudio.week3uws.ui.screens.premade.TopBar
 import org.uniqstudio.week3uws.ui.screens.premade.UserInputShellCompact
 import uws_mobile_week3.composeapp.generated.resources.Res
@@ -17,8 +16,7 @@ fun TaskFive(
     onClickBack: () -> Unit,
     onClickNext: () -> Unit,
 ){
-    //We can hold a list of numbers in one variable
-    val numbers = arrayOf(1,2,3,4,5)
+
 
     Scaffold(
         modifier = modifier,
@@ -35,7 +33,7 @@ fun TaskFive(
                 description = "Understand how to use the for-each loop to iterate over a collection.",
                 infoText = "Task Five",
                 composableContent = {
-                    TextForUI(text = numbers.joinToString())
+
                 },
                 onClickBack = onClickBack,
                 onClickNext = onClickNext
