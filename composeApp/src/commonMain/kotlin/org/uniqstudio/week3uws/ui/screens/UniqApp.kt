@@ -252,7 +252,7 @@ fun UniqApp(
                 TaskTen(
                     modifier = modifier.padding(5.dp),
                     onClickBack = { navController.navigateUp() },
-                    onClickNext = { navController.navigate(UniqAppScreens.ExerciseEleven.screen) },
+                    onClickNext = { navController.navigate(UniqAppScreens.TaskEleven.screen) },
                 )
             }
             composable(route = UniqAppScreens.TaskEleven.screen) {

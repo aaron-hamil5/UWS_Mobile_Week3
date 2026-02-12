@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import org.uniqstudio.week3uws.ui.screens.premade.TextForUI
 import org.uniqstudio.week3uws.ui.screens.premade.TopBar
 import org.uniqstudio.week3uws.ui.screens.premade.UserInputShellCompact
 import uws_mobile_week3.composeapp.generated.resources.Res
@@ -31,11 +32,15 @@ fun TaskEleven(
                 description = "Understand how to define a function that returns a value and use the returned value in the main function.",
                 infoText = "Task Eleven",
                 composableContent = {
-
+                    TextForUI(text = addition(1, 2).toString())
                 },
                 onClickBack = onClickBack,
                 onClickNext = onClickNext
             )
         }
     }
+}
+
+fun addition (a: Int, b: Int): Int{
+    return a + b
 }
