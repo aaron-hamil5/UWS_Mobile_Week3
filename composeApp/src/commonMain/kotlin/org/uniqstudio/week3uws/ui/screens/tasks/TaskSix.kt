@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import org.uniqstudio.week3uws.ui.screens.premade.TextForUI
 import org.uniqstudio.week3uws.ui.screens.premade.TopBar
 import org.uniqstudio.week3uws.ui.screens.premade.UserInputShellCompact
 import uws_mobile_week3.composeapp.generated.resources.Res
@@ -16,6 +17,7 @@ fun TaskSix(
     onClickBack: () -> Unit,
     onClickNext: () -> Unit,
 ){
+    var i = 1
     Scaffold(
         modifier = modifier,
         topBar = { TopBar(
@@ -31,6 +33,12 @@ fun TaskSix(
                 description = "Practice using the while loop to repeat a block of code while a condition is true.",
                 infoText = "Task Six",
                 composableContent = {
+                    while (i <= 5){
+                        TextForUI(
+                            text = i.toString()
+                        )
+                        i++
+                    }
 
                 },
                 onClickBack = onClickBack,
