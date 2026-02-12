@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import org.uniqstudio.week3uws.ui.screens.premade.TextForUI
 import org.uniqstudio.week3uws.ui.screens.premade.TopBar
 import org.uniqstudio.week3uws.ui.screens.premade.UserInputShellCompact
 import uws_mobile_week3.composeapp.generated.resources.Res
@@ -16,6 +17,7 @@ fun TaskEight(
     onClickBack: () -> Unit,
     onClickNext: () -> Unit,
 ){
+    var i = 1
     Scaffold(
         modifier = modifier,
         topBar = { TopBar(
@@ -31,6 +33,12 @@ fun TaskEight(
                 description = "Learn to use the do-while loop to execute a block of code at least once.",
                 infoText = "Task Eight",
                 composableContent = {
+                    do{
+                        TextForUI(
+                            text = i.toString()
+                        )
+                        i++
+                    }while (i <= 5)
 
                 },
                 onClickBack = onClickBack,
