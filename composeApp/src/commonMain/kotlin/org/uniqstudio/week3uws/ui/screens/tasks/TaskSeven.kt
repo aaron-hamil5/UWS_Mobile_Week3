@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import org.uniqstudio.week3uws.ui.screens.premade.TextForUI
 import org.uniqstudio.week3uws.ui.screens.premade.TopBar
 import org.uniqstudio.week3uws.ui.screens.premade.UserInputShellCompact
 import uws_mobile_week3.composeapp.generated.resources.Res
@@ -16,6 +17,7 @@ fun TaskSeven(
     onClickBack: () -> Unit,
     onClickNext: () -> Unit,
 ){
+    var i = 1
     Scaffold(
         modifier = modifier,
         topBar = { TopBar(
@@ -31,7 +33,13 @@ fun TaskSeven(
                 description = "Understand the concept of an infinite loop and how to control it.",
                 infoText = "Task Seven",
                 composableContent = {
-
+                    while (true){
+                        TextForUI(
+                            text = i.toString()
+                        )
+                        i++
+                        if (i > 5) break
+                    }
                 },
                 onClickBack = onClickBack,
                 onClickNext = onClickNext
