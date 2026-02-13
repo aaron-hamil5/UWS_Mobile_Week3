@@ -17,7 +17,7 @@ fun ExerciseOne(
     onClickBack: () -> Unit,
     onClickNext: () -> Unit,
 ){
-
+    val num = -10
     Scaffold(
         modifier = modifier,
         topBar = { TopBar(
@@ -34,7 +34,7 @@ fun ExerciseOne(
                 infoText = "Exercise One",
                 composableContent = {
                     TextForUI(
-                        text = ""
+                        text = if (num > 0) "The value is positive - $num" else "The value is not positive - $num"
                     )
                 },
                 onClickBack = onClickBack,
