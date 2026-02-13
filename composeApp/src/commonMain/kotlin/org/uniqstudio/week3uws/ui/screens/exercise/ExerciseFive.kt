@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import org.uniqstudio.week3uws.ui.screens.premade.TextForUI
 import org.uniqstudio.week3uws.ui.screens.premade.TopBar
 import org.uniqstudio.week3uws.ui.screens.premade.UserInputShellCompact
 import uws_mobile_week3.composeapp.generated.resources.Res
@@ -16,6 +17,7 @@ fun ExerciseFive(
     onClickBack: () -> Unit,
     onClickNext: () -> Unit,
 ){
+    val fruit = listOf("Apple", "Banana", "Orange")
     Scaffold(
         modifier = modifier,
         topBar = { TopBar(
@@ -31,7 +33,11 @@ fun ExerciseFive(
                 description = "Understand how to use the for-each loop to iterate over a collection.",
                 infoText = "Exercise Five",
                 composableContent = {
-
+                    fruit.forEach {
+                        TextForUI(
+                            text = it.uppercase()
+                        )
+                    }
                 },
                 onClickBack = onClickBack,
                 onClickNext = onClickNext
